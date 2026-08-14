@@ -1,5 +1,3 @@
-
-
 def  calculate_checkout(cart_total, shipping_speed):
     cart_total = float(input("Enter cart total: "))
     shipping_speed = input("Enter shipping choice (express/overnight/standard): ")
