@@ -9,7 +9,11 @@ def  calculate_checkout(cart_total, shipping_speed):
         print("Your shipping fee is $25 and your total is ($): ")
     elif shipping_speed == "standard":
         cart_total = cart_total + 10
-        print("Your shipping fee is $10 and your total is ($): ")
+        if cart_total > 100:
+            cart_total = cart_total - 10
+            print("Thank your for spending 100 dollars. Your shipping fee will be free. Your total is ($): ")
+        else:
+            print("Your shipping fee is $10 and your total is ($): ")
     else:
         print("Invalid shipping choice.")
 
