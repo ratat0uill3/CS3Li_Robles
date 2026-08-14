@@ -1,4 +1,3 @@
-
 def calculate_fuel(cargo_weight):
     total_weight = cargo_weight + 50000
     fuel = total_weight * 3
